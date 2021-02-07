@@ -6,27 +6,40 @@ a {
 .container {
     background-color:white;
     display:grid;
-    grid-template-columns: 110px 60px 35em 60px 70px 120px;
+    grid-template-columns: repeat(50,1fr);
     padding: 5px 0px 10px 0px;
     column-gap: 5px;
+    width:100%;
+    text-align: left;
 }
 
-.d1, .d2, .d4, .d5 {
-    margin-top: 16px;
+.d1 {
+    grid-column: 1 / 5;
 }
 
+.d2 {
+    grid-column: 5 / 6;
+}
+
+.d4 {
+    grid-column: 65 / 75;
+}
+.d5 {
+    grid-column: 77 / 90;
+}
 .d6 {
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
     border-radius: 50%;
     background-color:rgb(177, 177, 177);
     color:white;
+    grid-column: 92 / 110;
 }
 
 #MBsign {
-    position: absolute;
-    top:30px;
-    right:18px;   
+    position: relative;
+    top:20px;
+    right:-15px;   
 }
 
 #googlelogo {
@@ -51,7 +64,6 @@ a {
 
 #searchbar {
     grid-column: 1 / 11;
-
 }
 
 #gsearch, #goodluck {
@@ -71,6 +83,31 @@ a {
 #defooter {
     height:20px;
     width:auto;
-    background-color:rgb(95, 95, 95);
-    padding:0.6em;
+    background-color:rgb(221, 221, 221);
+    padding:0.7em;
+    margin-bottom: 10px;
+}
+
+.co2andothercontainer {
+    display:grid;
+    grid-template-columns: repeat(100, 1fr);
+    column-gap: 5px;
+    padding-bottom:15px;
+    width:100%;
+    text-align: right;
+    
+}
+
+.d7 {
+    grid-column: 10 / 25;
+}
+.d8 {
+    grid-column: 50 / 85;
+}
+.d9 {
+    grid-column: 86 / 96;
+}
+.d10 {
+    grid-column: 97 / 110;
+    
 }
