@@ -3,20 +3,72 @@ a {
     color:black;
 }
 
-#headershape {
-    background-color:yellow;
-    width:auto;
-    height:110px;
+.container {
+    background-color:white;
+    display:grid;
+    grid-template-columns: 110px 60px 35em 60px 70px 120px;
+    padding: 5px 0px 10px 0px;
+    column-gap: 5px;
 }
 
-#uppershape {
-    height: 40px;
-    width: 40px;
-    background-color:rgb(179, 179, 179);
+.d1, .d2, .d4, .d5 {
+    margin-top: 16px;
+}
+
+.d6 {
+    width:50px;
+    height:50px;
     border-radius: 50%;
+    background-color:rgb(177, 177, 177);
+    color:white;
 }
 
-#deutschlandfooter {
+#MBsign {
+    position: absolute;
+    top:30px;
+    right:18px;   
+}
+
+#googlelogo {
+    padding-top: 130px;
+    padding-bottom: 10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#box {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 35px 35px;
+    row-gap: 10px;
+    column-gap: 5px;
+    padding-bottom:400px;
+    width:100%;
+    text-align:center;
+}
+
+#searchbar {
+    grid-column: 1 / 11;
+
+}
+
+#gsearch, #goodluck {
+    grid-row: 2 / 3;
+    width: 160px;
+}
+
+#gsearch {
+    grid-column: 5 / 6;
+}
+
+#goodluck {
+    grid-column: 6 / 7;
+}
+
+
+#defooter {
     height:20px;
     width:auto;
     background-color:rgb(95, 95, 95);
